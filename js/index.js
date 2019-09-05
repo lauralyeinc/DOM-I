@@ -148,7 +148,7 @@ contentParas[8].textContent = "Copyright Great Idea! 2018";
 
 // task 3 
 // change color of nav text to green. 
-navAs.style.color = "Green";
+a.style.color = "green";
 
 h1.style.color = "green";
 
