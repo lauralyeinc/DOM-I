@@ -41,8 +41,7 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-//task 1 
-
+//task 1 & 2 
 // nav area  In inspect the element place"holders" are already there. Header -> nav -> 
 
 // const navItems = document.getElementsByTagName("a");
@@ -57,8 +56,8 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 // length: 6
 // __proto__: HTMLCollection
 
-// const navAs = document.querySelectorAll("a");
-// console.log(navAs);
+let navAs = document.querySelectorAll("a");
+console.log(navAs);
 // NodeList(6) [a, a, a, a, a, a]
 // 0: a
 // 1: a
@@ -68,13 +67,12 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 // 5: a
 // length: 6
 // __proto__: NodeList
-
-let navAone = document.querySelector("a")[0];
-// NavAone.textContent = "Services";
-// navAone.setAttribute( siteContent ["nav"]["nav-item-1"])
-
-
-
+navAs[0].textContent = "Services";
+navAs[1].textContent = "Product";
+navAs[2].textContent = "Vision";
+navAs[3].textContent = "Features";
+navAs[4].textContent = "About";
+navAs[5].textContent = "Contact";
 
 // Section cta <--- classname---------
 
@@ -88,47 +86,85 @@ let ctaImg = document.getElementById("cta-img");
 ctaImg.setAttribute('src', siteContent["cta"]["img-src"])
 
 // Section main-content --------------
-let featureh4 = document.querySelector("h4");
+const h4title = document.querySelectorAll("h4");
 
-featureh4.textContent = "Features";
+// console.log(h4title)
+// NodeList(6) [h4, h4, h4, h4, h4, h4]
+// 0: h4
+// 1: h4
+// 2: h4
+// 3: h4
+// 4: h4
+// 5: h4
+// length: 6
+// __proto__: NodeList
+h4title[0].textContent = "Features";
+h4title[1].textContent = "About";
+h4title[2].textContent = "Services";
+h4title[3].textContent = "Product";
+h4title[4].textContent = "Vision";
 
-let featureCont = document.querySelector("p");
+let middleImg = document.getElementById("middle-img");
+middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 
-featureCont.textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+const contentParas = document.querySelectorAll("p");
+// console.log(contentParas);
+// NodeList(9) [p, p, p, p, p, p, p, p, p]
+// 0: p
+// 1: p
+// 2: p
+// 3: p
+// 4: p
+// 5: p
+// 6: p
+// 7: p
+// 8: p
+// length: 9
+// __proto__: NodeList
+contentParas[0].textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+contentParas[1].textContent = "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+contentParas[2].textContent = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+contentParas[3].textContent = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+contentParas[4].textContent = "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
 
 
-// let abouth4 = document.querySelector("h4");
-// abouth4.textContent = "About";
 
-// let aboutCont = document.querySelector("p");
-// aboutCont.textContent = "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
-
-let codeImg = document.getElementById("middle-img"); 
-codeImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
-
-// let Servicesh4 = document.querySelector("h4");
-//Servicesh4.textContent = "Services";
-
-// let ServicesCont = document.querySelector("p"); 
-// ServicesCont.textContent = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
-
-// let producth4 = document.querySelector("h4");
-// producth4.textContent = "Product";
-
-// let productCont = document.querySelector("p");
-// productCont.textContent = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
-
-// let visionh4 = document.querySelector("h4");
-// visionh4.textContent = "Vision";
-
-// let visionCont = document.querySelector("p");
-// visionCont.textContent = "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
 
 //Section Contact 
+h4title[5].textContent = "Contact";
 
-// let contacth4 = document.getElementByName("h4");
+contentParas[5].textContent = "123 Way 456 Street Somewhere, USA";
 
-// contacth4.setAttribute("h4", siteContent["contact"]["contact-h4"])
+contentParas[6].textContent = "1 (888) 888-8888";
 
+contentParas[7].textContent = "sales@greatidea.io";
 
 // footer 
+contentParas[8].textContent = "Copyright Great Idea! 2018";
+
+// task 3 
+// change color of nav text to green. 
+navAs.style.color = "Green";
+
+h1.style.color = "green";
+
+//utilize .appendChild() & .prepend()  to add tow new items to the nav system. 
+//adding two anchors
+const HomeAnchor = document.createElement('a');
+
+HomeAnchor.textContent = "Home";
+
+navAs.prepend(HomeAnchor);
+
+const FAQsAnchor = document.createElement('FAQs');
+
+FAQsAnchor.textContent = "FAQs";
+
+navAs.appendChild(FAQsAnchor);
+
+
+
