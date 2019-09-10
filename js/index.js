@@ -148,23 +148,29 @@ contentParas[8].textContent = "Copyright Great Idea! 2018";
 
 // task 3 
 // change color of nav text to green. 
-a.style.color = "green";
+navAs.style.color = "green";
 
 h1.style.color = "green";
 
 //utilize .appendChild() & .prepend()  to add tow new items to the nav system. 
 //adding two anchors
-const HomeAnchor = document.createElement('a');
 
-HomeAnchor.textContent = "Home";
 
-navAs.prepend(HomeAnchor);
+const newAnchor = document.createElement('a');
 
-const FAQsAnchor = document.createElement('FAQs');
+newAnchor.textContent = "Home";
 
-FAQsAnchor.textContent = "FAQs";
+const nav = document.querySelector('nav');
+nav.prepend(newAnchor);
 
-navAs.appendChild(FAQsAnchor);
+
+
+const lastAnchor = document.createElement('a');
+
+lastAnchor.textContent = "FAQs";
+
+const nav = document.querySelctor('nav'); 
+nav.appendChild(lastAnchor);
 
 
 
